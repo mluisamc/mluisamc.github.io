@@ -257,7 +257,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nostrud.</p>
                         <ul>
                             <li><a class="main-btn custom" href="#">download cv</a></li>
-                            <li><a class="main-btn custom-2" href="#">hire me</a></li>
+                            <li><a class="main-btn custom-2" href="#contact">contact me</a></li>
                         </ul>
                     </div> <!-- call action content -->
                 </div>
@@ -280,36 +280,7 @@
                 </div>
             </div> <!-- row -->
             <div class="row">
-                <div class="offset-lg-2 col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/w-1.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Trivia Quiz</h3>
-                                <ul>
-                                    <li><a href="#"><i class="lni-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/w-2.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">UV Index</h3>
-                                <ul>
-                                    <li><a href="#"><i class="lni-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
+                <div class="calendar"></div>
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
@@ -350,27 +321,6 @@
                             <p>mluisamartinezc@gmail.com</p>
                         </div>
                     </div> <!-- contact box -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="contact-form pt-30">
-                        <form id="contact-form" action="assets/contact.php">
-                            <div class="single-form">
-                                <input type="text" name="name" placeholder="Name">
-                            </div> <!-- single form -->
-                            <div class="single-form">
-                                <input type="email" name="email" placeholder="Email">
-                            </div> <!-- single form -->
-                            <div class="single-form">
-                                <textarea name="message" placeholder="Message"></textarea>
-                            </div> <!-- single form -->
-                            <p class="form-message"></p>
-                            <div class="single-form text-center">
-                                <button class="main-btn" type="submit">Send Message</button>
-                            </div> <!-- single form -->
-                        </form>
-                    </div> <!-- contact form -->
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
@@ -438,6 +388,15 @@
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
 
+    <!--====== Github calendar ======-->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+    <script>
+        GitHubCalendar(".calendar", "mluisamc", { responsive: true });
+    </script>
 </body>
 
 </html>
